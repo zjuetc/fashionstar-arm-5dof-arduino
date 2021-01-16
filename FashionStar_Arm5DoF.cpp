@@ -120,7 +120,7 @@ void FSARM_ARM5DoF::forwardKinematics(FSARM_JOINTS_STATE_T thetas, FSARM_POINT3D
     // 求解pitch
     *pitch = thetas.theta2 + thetas.theta3 + thetas.theta4;
     // 角度转弧度
-    float theta1 = radians(thetas.theta1);
+    float theta1 = radians(thetas.theta1);//转弧度
     float theta2 = radians(thetas.theta2);
     float theta3 = radians(thetas.theta3);
     float theta4 = radians(thetas.theta4);
